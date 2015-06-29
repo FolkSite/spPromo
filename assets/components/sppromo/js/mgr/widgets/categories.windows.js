@@ -92,7 +92,7 @@ Ext.extend(spPromo.window.UpdateItem, MODx.Window, {
 			name: 'parent',
 			id: config.id + '-parent',
 			anchor: '99%',
-            hiddenName: 'my_dropdown',
+            hiddenName: 'parent',
             autoSelect: false,
             allowBlank: false,
             editable: false,
@@ -103,7 +103,9 @@ Ext.extend(spPromo.window.UpdateItem, MODx.Window, {
             enableKeyEvents: true,
             mode: 'local',
             store: [
-                ['id','name']
+                ['1','Товары для животных / Ветеринария'],
+                ['2','Ветеринария'],
+                ['3','Товары / услуги для животных'],
             ]
 		}, {
             xtype: 'textfield',
