@@ -1,0 +1,1 @@
+<div id="sppromo-panel-home-div"></div>

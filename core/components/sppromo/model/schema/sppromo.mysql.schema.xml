@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="sppromo" baseClass="xPDOObject" platform="mysql" defaultEngine="MyISAM" version="1.1">
+<object class="spPromoCategories" table="sppromo_categories" extends="xPDOSimpleObject">
+    <field key="name" dbtype="varchar" precision="255" phptype="string" null="false" />
+    <field key="parent" dbtype="int" precision="11" phptype="integer" null="false" />
+    <field key="level" dbtype="int" precision="11" phptype="integer" null="false" />
+    <field key="active" dbtype="tinyint" precision="1" attributes="unsigned" phptype="integer" null="true" default="1" />
+
+    <index alias="name" name="name" primary="false" unique="false" type="BTREE" >
+        <column key="name" length="" collation="A" null="false" />
+    </index>
+    <index alias="active" name="active" primary="false" unique="false" type="BTREE" >
+        <column key="active" length="" collation="A" null="true" />
+    </index>
+</object>
+</model>
